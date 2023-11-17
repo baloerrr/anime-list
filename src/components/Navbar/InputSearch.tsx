@@ -10,7 +10,10 @@ export default function InputSearch() {
 
   const handleSearch = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    router.push(`/search/${searchRef.current?.value}`)
+    let keyword = searchRef.current?.value
+
+    if(!keyword) return 
+    router.push(`/search/${keyword}`)
   }
 
   return (
