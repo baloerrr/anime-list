@@ -3,7 +3,7 @@ import Header from '@/components/AnimeList/header'
 
 export default async function Home() {
   const response: any = await fetch(
-    `${process.env.NEXT_PUBLIC_API_BASE_URL}/top/anime?limit=8`,
+    `${process.env.NEXT_PUBLIC_API_BASE_URL}/top/anime?limit=10`,
   )
   const topAnime = await response.json()
 

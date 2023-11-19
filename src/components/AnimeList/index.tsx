@@ -7,7 +7,7 @@ interface AnimeListProps {
 
 export default function AnimeList({ api }: AnimeListProps) {
   return (
-    <div className="grid md:grid-cols-4 sm:grid-cols-3 grid-cols-2 gap-4 px-4 ">
+    <div className="grid md:grid-cols-5 sm:grid-cols-3 grid-cols-2 gap-4 px-4 ">
       {api.data?.map((anime: any) => {
         return (
           <>
