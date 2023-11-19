@@ -3,14 +3,15 @@ import Header from '@/components/AnimeList/header'
 
 interface queryParams {
   params: {
-    keyword : String
+    keyword : string
   }
 }
 
 export default async function Page({params} : queryParams)  {
 const { keyword } = params;
+const decodeKeyword = decodeURI(keyword);
   const response: any = await fetch(
-    `${process.env.NEXT_PUBLIC_API_BASE_URL}/anime?q=${keyword}`,
+    `${process.env.NEXT_PUBLIC_API_BASE_URL}/anime?q=${decodeKeyword}`,
   )
   const seacrhAnime = await response.json()
 
@@ -18,7 +19,7 @@ const { keyword } = params;
     <>
       <section>
         <Header
-          title={`Pencarian untuk ${keyword}...`}
+          title={`Pencarian untuk ${decodeKeyword}...`}
           linkHref=''
           linkTitle=''
         />
