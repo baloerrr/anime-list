@@ -184,7 +184,7 @@ export default function Page() {
 				</p>
 				<a href="/"
 					className="bg-color-accent hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
-					Retry</a>
+					Go Home</a>
 			</div>
 		</div>
 	</div>
