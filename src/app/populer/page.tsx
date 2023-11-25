@@ -21,6 +21,7 @@ export default function Page() {
   }
 
   console.log(getAnimeResponse("top/anime", `page=${page}`))
+  console.log(topAnime);
   
 
   useEffect(() => {
