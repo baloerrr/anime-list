@@ -1,4 +1,6 @@
 export default function Page() {
+	console.log("Adit");
+	
     return (
         <div className="bg-black text-white">
 		<div className="flex h-screen">
