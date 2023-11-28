@@ -1,5 +1,5 @@
 export default function Page() {
-	console.log("Adit");
+	console.log("Adit Akbar");
 	
     return (
         <div className="bg-black text-white">

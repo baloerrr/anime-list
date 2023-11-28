@@ -3,3 +3,4 @@ export default async function getAnimeResponse(resource : string, query : string
     const anime = await response.json()
     return anime
 }
+
