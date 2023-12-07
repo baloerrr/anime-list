@@ -11,7 +11,7 @@ export default function AnimeList({ api }: AnimeListProps) {
       {api.data?.map((anime: any) => {
         return (
           <>
-            <Link href={`/${anime.mal_id}`} className="cursor-pointer text-color-primary hover:text-color-accent transition-all">
+            <Link href={`/anime/${anime.mal_id}`} className="cursor-pointer text-color-primary hover:text-color-accent transition-all">
               <Image
                 src={anime.images.webp.image_url}
                 className="w-full max-h64 object-cover"
